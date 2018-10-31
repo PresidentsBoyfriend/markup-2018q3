@@ -3,24 +3,27 @@
 
 .header {
     position: relative;
-    padding-left: 203px;
-    padding-right: 203px;
-    height: 960px;
-    border-top: 1px solid black;
+    height: auto;
     background-image: url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
     background-position: center;
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500;    
+    min-width: 1200px; 
 }
 .menu {
-    min-width: 1194px;
+    padding-left: 203px;
+    padding-right: 203px;
+    min-width: 1200px; 
     box-sizing: border-box;
-        padding-top: 31px;
+    padding-top: 31px;
     height: 88px;
 }
 body {
+    min-width: 1200px; 
     padding: 0px;
     margin: 0px auto;
 }
@@ -38,6 +41,8 @@ body {
     display: inline-block;
 }
 .line-l-r {
+    overflow: hidden;
+    width: auto;
     position: relative;
     height: 120px;
     font-family: Lato;
@@ -46,6 +51,7 @@ body {
     text-transform: uppercase;
 }    
 .bloc-reg {
+    min-width: 53%;
     position: absolute;
     top: 0px;
     background-color: #21424a;
@@ -61,6 +67,7 @@ body {
     font-size: 16px;
 }
 .parallelogram {
+    min-width: 53%;
     position: absolute;
     top: 0px;
     width: 51%;
