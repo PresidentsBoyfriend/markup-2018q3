@@ -12,21 +12,33 @@
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 500;    
-    min-width: 1200px; 
+    min-width: 1600px; 
+    height: 964px;
 }
+.header__menu ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 36px 0 34px 0;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+  }
 .menu {
-    padding-left: 203px;
-    padding-right: 203px;
-    min-width: 1200px; 
+    display: flex;
+    justify-content: space-between; 
     box-sizing: border-box;
     padding-top: 31px;
     height: 88px;
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.15);
+    align-items: center;
+    margin: 0 200px 0;
 }
-body {
-    min-width: 1200px; 
-    padding: 0px;
-    margin: 0px auto;
-}
+body,html {
+    font-family: 'Lato';
+    font-size: 16px;
+    width: 1600px;
+    margin: 0 auto;
+  }
       
 .line {
     position: relative;
@@ -96,6 +108,9 @@ body {
     font-size: 72px;
     font-style: bold;
 }
+.header-text {
+    padding: 345px 0 0 0;
+  }
 .header-text p {
     text-align: center;
     font-family: Georgia;
@@ -158,8 +173,4 @@ nav li a {
   color: white;
   text-decoration: none;
 }
-.header-text {
-  min-width: 1194px;
-  height: 540px;
-  margin-top: 335px;
-}
+
