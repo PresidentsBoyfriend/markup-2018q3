@@ -1,6 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+ @import url('https://fonts.googleapis.com/css?family=Lato');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+ @font-face {
+  font-family: 'lato-semibold';
+  src: url('../fonts/lato-semibold.eot');
+  src: url('../fonts/lato-semibold.eot') format('embedded-opentype'),
+       url('../fonts/lato-semibold.woff2') format('woff2'),
+       url('../fonts/lato-semibold.woff') format('woff'),
+       url('../fonts/lato-semibold.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,html {
+    font-family: 'Lato';
+    font-size: 16px;
+    width: 1600px;
+    margin: 0 auto;
+  }
+   
 .header {
     position: relative;
     height: auto;
@@ -33,13 +56,38 @@
     align-items: center;
     margin: 0 200px 0;
 }
-body,html {
-    font-family: 'Lato';
-    font-size: 16px;
-    width: 1600px;
-    margin: 0 auto;
-  }
-      
+.header img {
+    display: inline-block;
+}
+nav {
+  float:right;
+  margin-left:430px;
+  margin-top: 5px;
+}
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+nav li {
+  display: inline-block;
+  margin-right: 64px;
+  padding-bottom: 30px;
+}
+.active {
+  border-bottom: 1px solid white;
+}
+nav li a:hover {
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+nav li:last-child {
+  margin-right: 0px;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+   
 .line {
     position: relative;
     top: 21px;
@@ -142,35 +190,306 @@ body,html {
     text-decoration: none;
     margin-left: 31%;
 }
-.header img {
-    display: inline-block;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+} 
+
+
+/* timefull */
+
+.domain {
+    text-align: center;
+    padding: 74px 0 92px 0;
+  }
+  
+  .domain_container {
+    width: 74%; 
+    margin: 0 auto;
+  }
+  
+  .domain_title {
+    font-family: 'lato-heavy', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .domain_comment {
+    font-family: 'montserratlight', Arial, sans-serif;
+    font-size: 16px;
+    color: #a2a2a2;
+    margin-bottom: 49px;
+    letter-spacing: -0.1px;
+  }
+  
+  .domain__input_block {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .domain__input_block select,
+  .domain__input_block_www {
+    font-family: 'lato-regular', Arial, sans-serif;
+    font-size: 16px;
+    color: #cbcbcb;
+  }
+  
+  .domain__input_block_www {
+    width: 70px;
+  }
+  
+   .domain__input_block 
+  input[type="text"]::placeholder {
+    font-family: 'lato-semibold', Arial, sans-serif;
+    font-size: 15px;
+    color: #868686;
+    height: 48px;
+  } 
+  
+   .domain__input_block input[type="text"],
+  .domain__input_block select {
+    height: 32px;
+    border: none;
+  }
+ 
+  
+  .domain__input_block input[type="text"] {
+    width: calc(100% - 155px);
+    padding: 0 15px;
+    outline: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+  } 
+  
+  .domain__input_block select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0 15px;
+    width: 85px;
+    z-index: 1;
+    background: transparent;
+  }
+  
+  .domain__select_block:before {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 100%;
+    right: 1rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-bottom: -1.2rem;
+    border-top: 1px solid #ced2d5;
+    border-left: 1px solid #ced2d5;
+    background: #fff;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+    z-index: -1;
+  }
+  
+  .domain__select_block {
+    position: relative;
+  }
+  
+  .domain__select_block .domain__select_block_icons {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    color: #cbcbcb; 
+  }
+  
+  .domain_tbl {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 16px 0;    
+    width: 100%;    
+    font-family: 'lato-regular', Arial, sans-serif;
+    font-size: 14px;
+    color: #cbcbcb;
+  }
+  .tbl_cell {
+    padding: 30px 10px;
+    position: relative;
+    width: 25%;
+  }
+  
+  .tbl_row:first-child .tbl_cell:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.15);
+    right: 0;
+    bottom: 0;
+    margin: 0 6px;  
+  }
+  
+  
+  .tbl_row:first-child .tbl_cell:first-child:after {
+    width: 85%;
+  }
+  
+  .tbl_row:first-child .tbl_cell:last-child:after {
+    width: 85%;
+    left: 0;
+    right: auto;
+  }
+  
+  td:not(:last-child):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 5px 0;
+  }
+  
+  .tbl_row:first-child .tbl_cell {
+  padding: 20px 10px 40px 10px; 
+  }
+  
+  .tbl_row:last-child .tbl_cell {
+  padding: 40px 10px 20px 10px; 
+  }   
+  
+  .about-us__text {
+    padding-right: 100px;
+    width: 45%;
+    border-right: 2px dotted #d4d4d4;
+  }
+  
+  .about-us__text p {
+    color: #747474;
+    font-family: "Lato"; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.08px;
+  }
+  
+  .about-us__text h2 {
+    color: #303030;
+    font-family: "Lato", "Arial", sans-serif; 
+    font-weight: 900;
+    font-size: 3.5rem;
+  }
+  
+  .about-us__text h2 span {
+    font-family: 'lato-semibold', Arial, sans-serif;
+  }
+  .about-us {
+    padding: 100px 0 103px 0;
+  }
+  
+  .about-us__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .member-avatar img {
+    border-radius: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  .our-team {
+    padding-left: 100px;
+    width:55%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .our-team__member {
+    text-align: center;
+    width: 120px;
+    border-radius: 10%;
+  }
+  .our-team__member h3 {
+    color: #303030;
+    font-family: "Lato", 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+    margin: 0 auto;
+  }
+ 
+.comments {
+  height: 190px;
+  background-image: url(../img/comments_bg.jpg);
+  background-position: 50% 70%;
 }
-nav {
-  float:right;
-  margin-left:430px;
-  margin-top: 5px;
+.constrained {
+  padding: 50px 355px ;
 }
-nav ul {
-  margin: 0px;
+.comment {
+  text-align: center;
+  color: rgb(224, 224, 224);
+  font-family: "Lato"; 
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+.row-2_group {
+  width:150px;
+  margin: 0px auto;
   padding: 0px;
+  margin-top: 0px;
 }
-nav li {
+.position {
   display: inline-block;
-  margin-right: 64px;
-  padding-bottom: 30px;
 }
-.active {
-  border-bottom: 1px solid white;
+.cursor {
+  cursor: pointer;
 }
-nav li a:hover {
-  padding-bottom: 30px;
-  border-bottom: 1px solid white;
-}
-nav li:last-child {
-  margin-right: 0px;
-}
-nav li a {
-  color: white;
+.author {
   text-decoration: none;
+  border-right: 1px solid #ced2d5;
+  padding-right: 9px;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", 'Lato', sans-serif;
+  font-size: 21px;
+  font-weight: 600;
 }
+.group_function {
+  display: inline-block;
+  height: 340px;
+  width: 1200px;
+}
+.name_function {
+  color: #303030;
+  font-family: "Lato", 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+.settings {
+  width: 20%;
+  margin: 100px 25px 95px;
+  text-align: center;
+}
+.options {
+  color: #747474;
+  font-family: "Lato"; 
+  font-size: 15px;
+  font-weight: 400;
+}
+.position:hover {
+  color: rgb(200, 200, 200);
+}
+.comment-slide-1-active {
+  color: rgb(255, 255, 255);
+}
+.comments-unactive {
+  color: rgb(255, 255, 255);
+}
+
 
